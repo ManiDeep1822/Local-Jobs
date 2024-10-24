@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="P1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="P1.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Job Listings</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#job-types">Job Types</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search jobs..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <div class="marquee">
+        <p>Local Jobs</p>
+    </div>
+
+    <div class="main-container" id="job-types">
+        <div class="count1">
+            <img src="ai-generated-8442732.png" alt="Tailor" width="300px">
+            <h3>Tailor</h3>
+            <p>We are looking for a tailor to join our team.</p>
+            <a href="#tailor">Click here</a>
+        </div>
+
+        <div class="count2">
+            <img src="portrait-modern-man-performing-housework-gentle-dreamy-atmosphere.jpg" alt="Maid" width="300px">
+            <h3>Maid</h3>
+            <p>We are looking for a house cleaner to join our team.</p>
+            <a href="#maid">Click here</a>
+        </div>
+
+        <div class="count3">
+            <img src="240_F_820666958_ITIuldIx6I8h1Kkl0nmj9Jlk6rCJ9hBb.jpg" alt="Personal driver" width="300px">
+            <h3>Personal Driver</h3>
+            <p>We are looking for a personal driver to join our team.</p>
+            <a href="#driver">Click here</a>
+        </div>
+
+        <div class="count4">
+            <img src="mobile,jpeg.webp" alt="Mobile Technician" width="300px">
+            <h3>Mobile Technician</h3>
+            <p>We are looking for a mobile technician to join our team.</p>
+            <a href="#technician">Click here</a>
+        </div>
+
+        <div class="count5">
+            <img src="jepg.webp" alt="Sales clerk" width="300px">
+            <h3>Sales Clerk</h3>
+            <p>We are looking for a sales clerk to join our team.</p>
+            <a href="#sales">Click here</a>
+        </div>
+
+        <div class="count6">
+            <img src="DALL·E 2024-09-26 23.51.04 - A milkman delivering milk, standing by a bicycle or small vehicle loaded.webp" alt="Milk Vendor" width="300px">
+            <h3>Milk Vendor</h3>
+            <p>We are looking for a milk vendor to join our team.</p>
+            <a href="#milk">Click here</a>
+        </div>
+
+        <div class="count7">
+            <img src="z6tNwLScQkqhuYKoBqFx--1--e7oz2_2x.webp" alt="Paper boy" width="300px">
+            <h3>Paper Boy</h3>
+            <p>We are looking for a paper boy to join our team.</p>
+            <a href="#paperboy">Click here</a>
+        </div>
+
+        <div class="count8">
+            <img src="ai-generated-plumber-repairing-a-heating-system-he-is-using-a-wrench-a-male-plumber-repairs-a-pipeline-or-drain-under-the-sink-ai-generated-free-photo.jpg" alt="Plumber" width="300px">
+            <h3>Plumber</h3>
+            <p>We are looking for a plumber to join our team.</p>
+            <a href="#plumber">Click here</a>
+        </div>
+
+        <div class="count9">
+            <img src="1_6yA4zPlHyuQueUqTT4UbkA.png" alt="Electrician" width="300px">
+            <h3>Electrician</h3>
+            <p>We are looking for an electrician to join our team.</p>
+            <a href="#electrician">Click here</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Registration Form</h1>
+        <form action="action.php" method="POST">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            <label for="text" name="Number" id="Number">Mobile Number</label>
+            <input type="text" name="Number" id="Number" placeholder="Mobile Number" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="password">Re-Enter Password</label>
+            <input type="password" name="password" id="password" placeholder="Re-Enter Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

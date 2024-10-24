@@ -1,0 +1,266 @@
+/* P1.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Define fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main container for job listings */
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Individual job listings */
+.count1, .count2, .count3, .count4, .count5, .count6, .count7, .count8, .count9 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+/* Hover effect with animation */
+.count1:hover, .count2:hover, .count3:hover, .count4:hover, 
+.count5:hover, .count6:hover, .count7:hover, .count8:hover, 
+.count9:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #e8f0fe; /* Change background on hover */
+}
+
+/* Job titles */
+h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Job detail sections */
+div[id] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: none; /* Reset animation */
+}
+
+/* Highlight animation */
+@keyframes highlight {
+    0% { background-color: #fff; }
+    50% { background-color: #d1e7dd; }
+    100% { background-color: #fff; }
+}
+
+/* Apply highlight animation */
+.highlight {
+    animation: highlight 1s ease-in-out; /* Apply highlight animation */
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Define highlight animation */
+@keyframes highlight {
+    0% { background-color: #fff; }
+    50% { background-color: #d1e7dd; }
+    100% { background-color: #fff; }
+}
+
+
+
+.highlight {
+    animation: highlight 1s ease-in-out; /* Apply highlight animation */
+}
+
+img{
+    border-radius: 10px;
+}
+
+/* P1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.search-container button i {
+    color: #333;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-container div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.main-container h3 {
+    margin: 10px 0;
+}
+
+.main-container p {
+    margin: 5px 0 15px;
+}
+
+.main-container a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.main-container a:hover {
+    background-color: #45a049;
+}
+
+/* P1.css */
+
+/* Existing CSS... */
+
+.marquee {
+    background-color: #4CAF50;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    font-size: 36px;
+    font-family: 'poppins', sans-serif;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%; /* Start off-screen */
+    animation: marquee 15s linear infinite; /* Animation for marquee effect */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0); /* Start position */
+    }
+    100% {
+        transform: translate(-100%, 0); /* End position */
+    }
+}
